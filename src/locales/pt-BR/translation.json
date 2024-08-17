@@ -1,0 +1,357 @@
+{
+	"commons": {
+		"save": "Salvar",
+		"equals": "Igual a",
+		"password": "Senha",
+		"confirmPassword": "Confirmar Senha",
+		"send": "Enviar",
+		"signIn": "Entrar",
+		"cancel": "Cancelar",
+		"back": "Voltar",
+		"confirm": "Confirmar",
+		"deleteTitle": "Excluir",
+		"deleteMessage": "Tem certeza que deseja excluir este registro?",
+		"deleteSuccess": "Registro excluído com sucesso",
+		"addSuccess": "Registro adicionado com sucesso",
+		"deleteError": "Erro ao excluir registro",
+		"addError": "Erro ao adicionar registro",
+		"edit": "Editar",
+		"delete": "Excluir",
+		"remove": "Remover",
+		"create": "Cadastrar",
+		"add": "Adicionar",
+		"close": "Fechar",
+		"search": "Pesquisar",
+		"yes": "Sim",
+		"no": "Não",
+		"error": "Não foi possível realizar a operação",
+		"addField": "Adicionar Campo",
+		"removeField": "Remover Campo",
+		"addGroup": "Adicionar Grupo",
+		"removeGroup": "Remover Grupo",
+		"actions": "Ações",
+		"details": "Detalhes",
+		"noResults": "Nenhum resultado encontrado",
+		"pagination": {
+			"of": "de",
+			"moreThan": "mais de",
+			"rowsPerPage": "Linhas por página"
+		}
+	},
+	"MainMenu": {
+		"home": "Início",
+		"volunteers": "Voluntários",
+		"degrees": "Graduações",
+		"postgraduateDegrees": "Pós-Graduações",
+		"languages": "Idiomas",
+		"healthStatuses": "Status de Saúde",
+		"medicalExams": "Exames Médicos",
+		"professionalBoards": "Conselhos Profissionais",
+		"medicalSpecializations": "Especializações Médicas",
+		"trainingTypes": "Tipos de Treinamento",
+		"trainingAreas": "Áreas de Treinamento",
+		"trainings": "Treinamentos"
+	},
+	"BasicAutocomplete": {
+		"typeForMoreResults": "Digite para mais resultados...",
+		"invalidValue": "Valor inválido"
+	},
+	"FilterGroup": {
+		"language": "Idioma",
+		"degree": "Graduação",
+		"postgraduate_degree": "Pós-Graduação",
+		"medical_specialization": "Especialização Médica",
+		"label": "Valor",
+		"placeholder": "Selecione um valor",
+		"groupOperator": "Operador do Grupo",
+		"groupOperatorHint": "Selecione o tipo de grupo: E ou OU",
+		"field": "Atributo",
+		"training": "Treinamento"
+	},
+	"SupplyMedicineDetails": {
+		"title": "Insumo/Medicamento"
+	},
+	"SupplyMedicine": {
+		"name": "Nome",
+		"category": "Categoria",
+		"quantity": "Quantidade",
+		"unit": "Unidade",
+		"expiryDate": "Data de Validade",
+		"date": "Data",
+		"supplier": "Fornecedor"
+	},
+	"EquipmentDetails": {
+		"title": "Equipamento"
+	},
+	"Equipment": {
+		"name": "Nome",
+		"category": "Categoria",
+		"quantity": "Quantidade",
+		"status": "Status",
+		"location": "Localização"
+	},
+	"Volunteer": {
+		"name": "Nome",
+		"degrees": "Graduações",
+		"postgraduateDegrees": "Pós-Graduações",
+		"email": "E-mail",
+		"phone": "Telefone",
+		"location": "Localização",
+		"document": "Número do Documento (RG, CPF ou outro)",
+		"resumeLink": "Link Currículo Lattes (atualizado)",
+		"travelAvailability": "Disponibilidade para Viagem",
+		"active": "Ativo",
+		"degree": "Graduação",
+		"postgraduateDegree": "Pós-Graduação",
+		"language": "Idioma",
+		"vaccine": "Vacina",
+		"health_status": "Status de Saúde",
+		"medicalExam": "Exame Médico",
+		"professionalBoard": "Conselho Profissional",
+		"medicalSpecialization": "Especialização Médica",
+		"training": "Treinamento",
+		"volunteerProfile": "Perfil de Voluntário",
+		"teamRole": "Função na Equipe"
+	},
+	"VoluntarioCreateEditPage": {
+		"createTitle": "Cadastrar Voluntário",
+		"editTitle": "Editar Voluntário",
+		"createSuccess": "Voluntário criado com sucesso",
+		"editSuccess": "Voluntário editado com sucesso",
+		"createError": "Erro ao criar voluntário",
+		"editError": "Erro ao editar voluntário"
+	},
+	"TrainingCreateEditPage": {
+		"createTitle": "Cadastrar Treinamento",
+		"editTitle": "Editar Treinamento",
+		"createSuccess": "Treinamento criado com sucesso",
+		"editSuccess": "Treinamento editado com sucesso",
+		"createError": "Erro ao criar treinamento",
+		"editError": "Erro ao editar treinamento",
+		"deleteSuccess": "Treinamento excluído com sucesso",
+		"deleteError": "Erro ao excluir treinamento"
+	},
+	"VolunteerDegree": {
+		"title": "Graduações",
+		"noRowsLabel": "Nenhuma graduação encontrada"
+	},
+	"VolunteerTraining": {
+		"title": "Treinamentos",
+		"training": "Treinamento",
+		"date": "Data",
+		"noRowsLabel": "Nenhum treinamento encontrado"
+	},
+	"VolunteerPostgraduateDegree": {
+		"title": "Pós-Graduações",
+		"noRowsLabel": "Nenhuma pós-graduação encontrada"
+	},
+	"VolunteerLanguage": {
+		"title": "Idiomas",
+		"noRowsLabel": "Nenhum idioma encontrado"
+	},
+	"VolunteerVaccineDose": {
+		"title": "Doses de Vacina",
+		"vaccine": "Vacina",
+		"dose_number": "Dose",
+		"date_administered": "Data",
+		"noRowsLabel": "Nenhuma dose de vacina encontrada"
+	},
+	"VolunteerHealthStatus": {
+		"title": "Status de Saúde",
+		"status": "Status",
+		"updated_at": "Data",
+		"noRowsLabel": "Nenhum status de saúde encontrado"
+	},
+	"VolunteerMedicalExam": {
+		"title": "Exames Médicos",
+		"exam": "Exame",
+		"examDate": "Data",
+		"noRowsLabel": "Nenhum exame médico encontrado"
+	},
+	"VolunteerProfessionalBoard": {
+		"title": "Conselhos Profissionais",
+		"board": "Conselho",
+		"code": "Nº Registro",
+		"noRowsLabel": "Nenhum conselho profissional encontrado"
+	},
+	"VolunteerMedicalSpecialization": {
+		"title": "Especializações Médicas",
+		"medicalSpecialization": "Especialização Médica",
+		"noRowsLabel": "Nenhuma especialização médica encontrada"
+	},
+	"VolunteerForm": {
+		"title": "Voluntário",
+		"basicData": "Dados Básicos",
+		"searchLocation": "Pesquisar Localização",
+		"invalidName": "Nome inválido",
+		"invalidEmail": "E-mail inválido",
+		"invalidPhone": "Telefone inválido",
+		"invalidLocation": "Localização inválida",
+		"invalidDocument": "Número do Documento inválido",
+		"invalidResumeLink": "Link do Currículo inválido"
+	},
+	"VoluntariosTable": {
+		"title": "Voluntários",
+		"noRowsLabel": "Nenhum voluntário encontrado"
+	},
+	"EquipmentsPage": {
+		"title": "Equipamentos"
+	},
+	"BasicTable": {
+		"name": "Nome",
+		"deleteTitle": "Excluir",
+		"deleteMessage": "Tem certeza que deseja excluir este registro: {{name}}?",
+		"degree": "Graduação",
+		"postgraduate_degree": "Pós-Graduação",
+		"language": "Idioma",
+		"medical_specialization": "Especialização Médica",
+		"health_status": "Status de Saúde",
+		"medical_exam": "Exame Médico",
+		"professional_board": "Conselho Profissional",
+		"training_type": "Tipo de Treinamento",
+		"training_area": "Área de Treinamento",
+		"noRowsLabel": "Nenhum registro encontrado"
+	},
+	"BasicTablesPage": {
+		"deleteSuccess": "Registro excluído com sucesso",
+		"deleteError": "Erro ao excluir registro"
+	},
+	"BasicTableFilterForm": {
+		"name": "Nome"
+	},
+	"BasicFormDialog": {
+		"createTitle": "Cadastrar",
+		"editTitle": "Editar",
+		"createSuccess": "Registro criado com sucesso",
+		"editSuccess": "Registro editado com sucesso",
+		"createError": "Erro ao criar registro",
+		"editError": "Erro ao editar registro",
+		"deleteSuccess": "Registro excluído com sucesso",
+		"deleteError": "Erro ao excluir registro"
+	},
+	"Training": {
+		"name": "Nome",
+		"area": "Área",
+		"description": "Descrição",
+		"detailsLink": "Link para Detalhes",
+		"trainingType": "Tipo de Treinamento",
+		"date": "Data",
+		"noRowsLabel": "Nenhum treinamento encontrado"
+	},
+	"TrainingTable": {
+		"title": "Treinamentos"
+	},
+	"TrainingForm": {
+		"title": "Treinamento",
+		"basicData": "Dados Básicos",
+		"invalidName": "Nome inválido",
+		"invalidDescription": "Descrição inválida",
+		"invalidResumeLink": "Link para Detalhes inválido"
+	},
+	"TrainingArea": {
+		"title": "Áreas de Treinamento",
+		"noRowsLabel": "Nenhuma área de treinamento encontrada"
+	},
+	"Team": {
+		"name": "Nome",
+		"description": "Descrição"
+	},
+	"TeamTable": {
+		"title": "Equipes",
+		"noRowsLabel": "Nenhuma equipe encontrada"
+	},
+	"TeamForm": {
+		"title": "Equipe",
+		"basicData": "Dados Básicos",
+		"invalidName": "Nome inválido",
+		"invalidDescription": "Descrição inválida",
+		"volunteerProfiles": "Perfis de Voluntário"
+	},
+	"TeamCreateEditPage": {
+		"createTitle": "Cadastrar Equipe",
+		"editTitle": "Editar Equipe",
+		"createSuccess": "Equipe criada com sucesso",
+		"editSuccess": "Equipe editada com sucesso",
+		"createError": "Erro ao criar equipe",
+		"editError": "Erro ao editar equipe"
+	},
+	"VolunteerProfileCreateEditPage": {
+		"createTitle": "Cadastrar Perfil de Voluntário",
+		"editTitle": "Editar Perfil de Voluntário",
+		"createSuccess": "Perfil de voluntário criado com sucesso",
+		"editSuccess": "Perfil de voluntário editado com sucesso",
+		"createError": "Erro ao criar perfil de voluntário",
+		"editError": "Erro ao editar perfil de voluntário",
+		"deleteSuccess": "Perfil de voluntário excluído com sucesso",
+		"deleteError": "Erro ao excluir perfil de voluntário"
+	},
+	"VolunteerProfileForm": {
+		"title": "Perfil de Voluntário",
+		"basicData": "Dados Básicos",
+		"filter": "Características do Perfil",
+		"invalidName": "Nome inválido",
+		"invalidDescription": "Descrição inválida"
+	},
+	"VolunteerProfile": {
+		"name": "Nome",
+		"description": "Descrição",
+		"profileFilter": "Filtro de Perfil"
+	},
+	"VolunteerProfileTable": {
+		"title": "Perfis de Voluntário",
+		"noRowsLabel": "Nenhum perfil de voluntário encontrado"
+	},
+	"FilterBuilder": {
+		"saveFilter": "Salvar Características"
+	},
+	"TeamVolunteerProfile": {
+		"title": "Perfis de Voluntário",
+		"noRowsLabel": "Nenhum perfil de voluntário encontrado"
+	},
+	"BasicAutocompleteMultiple": {
+		"typeForMoreResults": "Digite para mais resultados...",
+		"invalidValue": "Valor inválido"
+	},
+	"TeamVolunteer": {
+		"title": "Voluntários",
+		"noRowsLabel": "Nenhum voluntário encontrado"
+	},
+	"FilterFieldDialog": {
+		"title": "Adicionar Filtro",
+		"addFilter": "Adicionar Filtro"
+	},
+	"VoluntariosFilterForm": {
+		"filters": "Filtros",
+		"profileFilter": "Filtros por Perfil"
+	},
+	"VolunteerSignUpPage": {
+		"title": "Cadastre-se como voluntário",
+		"emailAlreadyInUse": "E-mail já em uso",
+		"createSuccess": "Voluntário cadastrado com sucesso",
+		"createError": "Erro ao cadastrar voluntário"
+	},
+	"VolunteerSignUpForm": {
+		"credentials": "Credenciais",
+		"credentialsInstructions": "Informe seu e-mail e defina uma senha para acessar a área do voluntário",
+		"passwordsNotMatch": "As senhas não coincidem"
+	},
+	"VolunteerSignInPage": {
+		"title": "Acesar Área do Voluntário",
+		"invalidCredential": "Credenciais inválidas"
+	},
+	"VolunteerSignInForm": {
+		"title": "Acessar Área do Voluntário",
+		"invalidEmail": "E-mail inválido",
+		"invalidPassword": "Senha inválida"
+	},
+	"VolunteerSignUpSuccessPage": {
+		"title": "Cadastro realizado com sucesso",
+		"messageA": "Obrigado por se cadastrar!",
+		"messageB": "Enviamos um e-mail de confirmação para você. Por favor, verifique sua caixa de entrada e siga as instruções para ativar sua conta e completar seu cadastro."
+	},
+	"VolunteerCompleteProfilePage": {
+		"title": "Complete seu cadastro",
+		"editSuccess": "Perfil de voluntário editado com sucesso",
+		"editError": "Erro ao editar perfil de voluntário"
+	}
+}

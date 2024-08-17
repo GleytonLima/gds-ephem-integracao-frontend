@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <rect width="100%" height="100%" />
+
+    <!-- Outros círculos -->
+    <circle cx="70" cy="110" r="15" fill="#FFA07A" />
+    <circle cx="100" cy="110" r="15" fill="#8B4513" />
+    <circle cx="130" cy="110" r="15" fill="#FFD700" />
+
+    <!-- Retângulos -->
+    <rect x="55" y="130" width="30" height="30" rx="5" fill="#87CEEB" />
+    <rect x="85" y="130" width="30" height="30" rx="5" fill="#32CD32" />
+    <rect x="115" y="130" width="30" height="30" rx="5" fill="#FF6347" />
+</svg>

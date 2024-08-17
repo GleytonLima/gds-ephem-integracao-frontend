@@ -1,0 +1,8 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="75%" height="75%" fill="none"/>
+  
+  <!-- Envelope (ícone de e-mail) -->
+  <path d="M40 60 L160 60 L160 140 L40 140 Z M40 60 L100 100 L160 60 M40 140 L80 100 M160 140 L120 100" 
+        fill="none" stroke="#FFA500" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+</svg>

@@ -1,0 +1,27 @@
+{
+	"commons": {
+		"save": "Guardar",
+		"cancel": "Cancelar",
+		"edit": "Editar",
+		"delete": "Eliminar",
+		"add": "Agregar",
+		"close": "Cerrar",
+		"search": "Buscar",
+		"confirm": "Confirmar",
+		"yes": "Sí",
+		"no": "No",
+		"error": "Error"
+	},
+	"SupplyMedicineDetails": {
+		"title": "Insumo/Medicamento"
+	},
+	"SupplyMedicine": {
+		"name": "Nombre",
+		"category": "Categoría",
+		"quantity": "Cantidad",
+		"unit": "Unidad",
+		"expiryDate": "Fecha de Vencimiento",
+		"date": "Fecha",
+		"supplier": "Proveedor"
+	}
+}
