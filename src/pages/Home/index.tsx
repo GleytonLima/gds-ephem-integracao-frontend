@@ -23,7 +23,7 @@ import { labelDisplayedRows } from "../../models/pagination-translate";
 import { useTranslation } from "react-i18next";
 import useWindowDimensions from "../../hooks/window-dimensions";
 import { SortParam } from "../../models/pagination";
-import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 interface Evento {
   id: number;
@@ -61,10 +61,13 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: "80%", // Alterado para 90% da largura
+  maxWidth: "800px", // Adicionado um maxWidth para evitar que fique muito largo em telas grandes
   bgcolor: "background.paper",
   boxShadow: 24,
   p: 4,
+  overflowY: "auto", // Adicionado para permitir rolagem vertical se o conteúdo for muito grande
+  maxHeight: "90vh", // Limitando a altura máxima para 90% da altura da viewport
 };
 
 const HomePage = () => {
