@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import MainBar from '../../components/Commons/MainAppBar';
 import EventForm, { EventFormData } from '../../components/Events/EventForm';
-import api from '../../services/api.config';
 import { useParams } from 'react-router-dom';
 import { getEvent } from '../../services/events.service';
 
