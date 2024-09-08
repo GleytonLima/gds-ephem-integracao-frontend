@@ -67,7 +67,7 @@ const style = {
   boxShadow: 24,
   p: 4,
   overflowY: "auto", // Adicionado para permitir rolagem vertical se o conteúdo for muito grande
-  maxHeight: "90vh", // Limitando a altura máxima para 90% da altura da viewport
+  maxHeight: "75vh", // Limitando a altura máxima para 90% da altura da viewport
 };
 
 const HomePage = () => {
