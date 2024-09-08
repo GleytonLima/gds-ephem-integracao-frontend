@@ -267,12 +267,12 @@ const HomePage = () => {
           columns={columns}
           columnVisibilityModel={{
             id: true,
-            createdAt: width > 600,
+            createdAt: true,
             evento_descricao: width > 600,
             evento_data_ocorrencia: width > 600,
             evento_local_ocorrencia: width > 600,
             status: true,
-            action: true,
+            actions: width > 600,
           }}
           disableColumnMenu
           disableColumnResize
