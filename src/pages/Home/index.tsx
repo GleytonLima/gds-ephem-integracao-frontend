@@ -85,7 +85,7 @@ const HomePage = () => {
 
   const [pageParams, setPageParams] = useState({ page: 0, pageSize: 10 });
   const [sortParams, setSortParams] = useState<GridSortItem[]>([
-    { field: "name", sort: "asc" },
+    { field: "updatedAt", sort: "desc" },
   ]);
   const [loading, setLoading] = useState(false);
   const [openModal, setOpenModal] = useState(false);
