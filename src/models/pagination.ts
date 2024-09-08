@@ -1,12 +1,9 @@
-export interface CustomPagination {
-    size: number;
-    totalElements: number;
-    totalPages: number;
-    number: number;
+export interface SortParam {
+  field: string;
+  sort: "asc" | "desc";
 }
 
-export interface CustomPageRequest {
-    size: number;
-    page: number;
-    sort: string;
+export interface QueryParam {
+  field?: string | number;
+  value: string;
 }
