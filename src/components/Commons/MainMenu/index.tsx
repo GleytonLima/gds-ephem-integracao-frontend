@@ -1,4 +1,3 @@
-import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import { Toolbar, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -8,6 +7,12 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { Link } from 'react-router-dom';
+import HomeIcon from '@mui/icons-material/Home';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import PeopleIcon from '@mui/icons-material/People';
+import LogoutIcon from '@mui/icons-material/Logout';
+import { logout } from '../../../services/auth.service';
+import { useNavigate } from 'react-router-dom';
 
 export interface TemporaryDrawerProps {
 	open: boolean;
@@ -19,32 +24,57 @@ export default function MainMenu({
 	open,
 	toggleDrawer
 }: TemporaryDrawerProps) {
-	const DrawerList = (
-		<Box sx={{ width: 350 }} role="presentation">
-			<Toolbar>
-				<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-					<Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-						GDS-Ephem
-					</Link>
-				</Typography>
-			</Toolbar>
-			<Divider />
-			<List>
-				<ListItemButton component={Link} to="/">
-					<ListItemIcon>
-						<VolunteerActivismIcon />
-					</ListItemIcon>
-					<ListItemText primary="Eventos Recebidos" />
-				</ListItemButton>
-			</List>
-		</Box>
-	);
+	const navigate = useNavigate();
+
+	const handleLogout = () => {
+		logout();
+		navigate('/login');
+	};
 
 	return (
-		<div>
-			<Drawer open={open} onClose={toggleDrawer(false)}>
-				{DrawerList}
-			</Drawer>
-		</div>
+		<Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
+			<Box
+				sx={{ width: 250 }}
+				role="presentation"
+				onClick={toggleDrawer(false)}
+				onKeyDown={toggleDrawer(false)}
+			>
+				<Toolbar sx={{ justifyContent: 'center' }}>
+					<Typography variant="h6" component="div">
+						GDS Ephem
+					</Typography>
+				</Toolbar>
+				<Divider />
+				<List>
+					<ListItemButton component={Link} to="/">
+						<ListItemIcon>
+							<HomeIcon />
+						</ListItemIcon>
+						<ListItemText primary="Início" />
+					</ListItemButton>
+					<ListItemButton component={Link} to="/events">
+						<ListItemIcon>
+							<AddCircleIcon />
+						</ListItemIcon>
+						<ListItemText primary="Novo Evento" />
+					</ListItemButton>
+					<ListItemButton component={Link} to="/users">
+						<ListItemIcon>
+							<PeopleIcon />
+						</ListItemIcon>
+						<ListItemText primary="Gerenciar Usuários" />
+					</ListItemButton>
+				</List>
+				<Divider />
+				<List>
+					<ListItemButton onClick={handleLogout}>
+						<ListItemIcon>
+							<LogoutIcon />
+						</ListItemIcon>
+						<ListItemText primary="Sair" />
+					</ListItemButton>
+				</List>
+			</Box>
+		</Drawer>
 	);
 }

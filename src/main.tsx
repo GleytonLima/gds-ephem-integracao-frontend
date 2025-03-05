@@ -7,14 +7,20 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider/LocalizationProvider';
 import { ptBR } from 'date-fns/locale';
 import { MaterialDesignContent, SnackbarProvider } from 'notistack';
-import ReactDOM from 'react-dom/client';
+import * as ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App.tsx';
 import { configureI18n } from './i18n';
 import './index.css';
 import EventNewPage from './pages/EventNew/index.tsx';
 import EventEditPage from './pages/EventEdit/index.tsx';
+import LoginPage from './pages/Login/index.tsx';
+import UsersPage from './pages/Users/index.tsx';
+import ProtectedRoute from './components/Auth/ProtectedRoute.tsx';
+import { setupAuthInterceptor } from './services/auth.service.ts';
 
+// Configurar o interceptor de autenticação
+setupAuthInterceptor();
 
 configureI18n();
 
@@ -54,9 +60,16 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 			>
 				<BrowserRouter>
 					<Routes>
-						<Route path="/" element={<App />}></Route>
-						<Route path="/events" element={<EventNewPage />}></Route>
-						<Route path="/events/:id" element={<EventEditPage />}></Route>
+						{/* Rota pública de login */}
+						<Route path="/login" element={<LoginPage />} />
+						
+						{/* Rotas protegidas */}
+						<Route element={<ProtectedRoute />}>
+							<Route path="/" element={<App />} />
+							<Route path="/events" element={<EventNewPage />} />
+							<Route path="/events/:id" element={<EventEditPage />} />
+							<Route path="/users" element={<UsersPage />} />
+						</Route>
 					</Routes>
 				</BrowserRouter>
 			</SnackbarProvider>
